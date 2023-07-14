@@ -1,0 +1,5 @@
+pandas
+numpy
+fxcmpy
+scikit-learn
+cufflinks

@@ -1,0 +1,150 @@
+|ERROR|2023-04-13 18:24:52,353|Socket returns unknown error.
+|ERROR|2023-04-13 18:25:19,016|Socket returns unknown error.
+|ERROR|2023-04-13 18:25:26,791|Socket returns unknown error.
+|ERROR|2023-04-14 15:48:36,670|Socket returns unknown error.
+|ERROR|2023-04-14 15:48:51,141|Socket returns unknown error.
+|ERROR|2023-04-14 15:49:57,555|Socket returns unknown error.
+|ERROR|2023-04-14 15:51:20,666|Socket returns unknown error.
+|ERROR|2023-04-14 15:51:34,011|Socket returns unknown error.
+|ERROR|2023-04-14 15:52:09,830|Socket returns unknown error.
+|ERROR|2023-04-14 19:09:29,439|Socket returns unknown error.
+|ERROR|2023-04-14 23:27:10,326|Connection error: HTTPSConnectionPool(host='api-demo.fxcm.com', port=443): Read timed out. (read timeout=5)
+|ERROR|2023-04-14 23:27:22,634|Connection error: HTTPSConnectionPool(host='api-demo.fxcm.com', port=443): Read timed out. (read timeout=5)
+|ERROR|2023-04-15 06:40:10,830|Connection error: HTTPSConnectionPool(host='api-demo.fxcm.com', port=443): Read timed out. (read timeout=5)
+|ERROR|2023-04-15 06:40:11,250|Connection error: HTTPSConnectionPool(host='api-demo.fxcm.com', port=443): Read timed out. (read timeout=5)
+|ERROR|2023-04-15 06:40:16,919|Connection error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+|ERROR|2023-04-15 06:40:16,919|Connection error: ('Connection aborted.', ConnectionResetError(104, 'Connection reset by peer'))
+|ERROR|2023-04-15 06:45:10,885|packet queue is empty, aborting
+|ERROR|2023-04-15 07:59:53,844|Socket returns unknown error.
+|ERROR|2023-04-16 11:04:01,437|Socket returns unknown error.
+|ERROR|2023-04-16 11:05:10,327|Socket returns unknown error.
+|ERROR|2023-04-16 11:06:04,043|Socket returns unknown error.
+|ERROR|2023-04-16 11:08:04,599|Socket returns unknown error.
+|ERROR|2023-04-16 11:08:43,754|Socket returns unknown error.
+|ERROR|2023-04-16 11:28:20,057|Socket returns unknown error.
+|ERROR|2023-04-16 12:12:15,186|Socket returns unknown error.
+|ERROR|2023-04-16 12:12:33,000|Socket returns unknown error.
+|ERROR|2023-04-16 19:05:15,021|Call of automated_trading raised an error:
+|ERROR|2023-04-16 19:05:15,023|<class 'AttributeError'>
+|ERROR|2023-04-16 19:05:15,023|module 'datetime' has no attribute 'now'
+|ERROR|2023-04-16 19:07:35,104|Call of automated_trading raised an error:
+|ERROR|2023-04-16 19:07:35,104|<class 'AttributeError'>
+|ERROR|2023-04-16 19:07:35,104|module 'datetime' has no attribute 'now'
+|ERROR|2023-04-16 19:07:55,072|Call of automated_trading raised an error:
+|ERROR|2023-04-16 19:07:55,072|<class 'AttributeError'>
+|ERROR|2023-04-16 19:07:55,073|module 'datetime' has no attribute 'now'
+|ERROR|2023-04-16 19:09:55,186|Call of automated_trading raised an error:
+|ERROR|2023-04-16 19:09:55,187|<class 'AttributeError'>
+|ERROR|2023-04-16 19:09:55,187|module 'datetime' has no attribute 'now'
+|ERROR|2023-04-16 19:10:15,044|Call of automated_trading raised an error:
+|ERROR|2023-04-16 19:10:15,044|<class 'AttributeError'>
+|ERROR|2023-04-16 19:10:15,045|module 'datetime' has no attribute 'now'
+|ERROR|2023-04-16 21:15:22,873|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:15:22,874|<class 'AttributeError'>
+|ERROR|2023-04-16 21:15:22,875|'MLTrader' object has no attribute 'self'
+|ERROR|2023-04-16 21:25:07,750|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:25:07,751|<class 'NameError'>
+|ERROR|2023-04-16 21:25:07,751|name 'lags' is not defined
+|ERROR|2023-04-16 21:30:00,496|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:30:00,497|<class 'NameError'>
+|ERROR|2023-04-16 21:30:00,497|name 'lags' is not defined
+|ERROR|2023-04-16 21:35:53,284|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:35:53,284|<class 'NameError'>
+|ERROR|2023-04-16 21:35:53,284|name 'lags' is not defined
+|ERROR|2023-04-16 21:40:03,664|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:40:03,664|<class 'NameError'>
+|ERROR|2023-04-16 21:40:03,664|name 'lags' is not defined
+|ERROR|2023-04-16 21:46:00,897|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:46:00,898|<class 'KeyError'>
+|ERROR|2023-04-16 21:46:00,898|"['lag1', 'lag2', 'lag3', 'lag4', 'lag5'] not in index"
+|ERROR|2023-04-16 21:50:00,798|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:50:00,798|<class 'AttributeError'>
+|ERROR|2023-04-16 21:50:00,798|'MLTrader' object has no attribute 'self'
+|ERROR|2023-04-16 21:56:00,592|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 21:56:00,593|<class 'AttributeError'>
+|ERROR|2023-04-16 21:56:00,593|'MLTrader' object has no attribute 'self'
+|ERROR|2023-04-16 21:58:24,821|Socket returns unknown error.
+|ERROR|2023-04-16 22:00:00,915|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 22:00:00,916|<class 'AttributeError'>
+|ERROR|2023-04-16 22:00:00,917|'MLTrader' object has no attribute 'unit_size'
+|ERROR|2023-04-16 22:05:53,691|Call of get_tick_data raised an error:
+|ERROR|2023-04-16 22:05:53,691|<class 'AttributeError'>
+|ERROR|2023-04-16 22:05:53,692|'MLTrader' object has no attribute 'report_trade'
+|ERROR|2023-04-17 18:10:03,341|Call of get_tick_data raised an error:
+|ERROR|2023-04-17 18:10:03,345|<class 'AttributeError'>
+|ERROR|2023-04-17 18:10:03,345|'DataFrame' object has no attribute 'amountK'
+|ERROR|2023-04-17 18:52:10,433|Error in get_candles: Illegal period: h1.
+|ERROR|2023-04-17 18:53:32,346|Error in get_candles: Illegal period: 1h.
+|ERROR|2023-04-18 04:00:39,804|Server reports an error: {'executed': False, 'error': 'Unauthorized'}.
+|ERROR|2023-04-18 04:00:39,804|URL: https://api-demo.fxcm.com:443/trading/open_trade
+|ERROR|2023-04-18 04:00:39,805|Headers: {'User-Agent': 'request', 'Accept-Encoding': 'gzip, deflate, br', 'Accept': 'application/json', 'Connection': 'keep-alive', 'Authorization': 'Bearer 5gWTa7YFbRdnHtJzAB48540857ea0f2c6bf6d5bd063300c5f0107fe37ad9', 'Content-Type': 'application/x-www-form-urlencoded', 'Content-Length': '139'}
+|ERROR|2023-04-18 04:00:39,805|Params: {'account_id': 1347451, 'symbol': 'EUR/USD', 'is_buy': 'true', 'rate': 1347451.0, 'amount': 2, 'at_market': 0.0, 'order_type': 'AtMarket', 'time_in_force': 'FOK', 'limit': None, 'is_in_pips': 'true'}
+|ERROR|2023-04-18 04:00:39,805|Bearer token: Bearer 5gWTa7YFbRdnHtJzAB48540857ea0f2c6bf6d5bd063300c5f0107fe37ad9
+|ERROR|2023-04-18 04:00:39,805|Connection status: established
+|ERROR|2023-04-18 04:00:39,805|Socket session id: 5gWTa7YFbRdnHtJzAB48
+|ERROR|2023-04-18 04:00:39,805|Can not parse server answer to json object: {"response":{"executed":false,"error":"Unauthorized"}}.
+|ERROR|2023-04-18 04:00:39,806|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:00:39,806|<class 'AttributeError'>
+|ERROR|2023-04-18 04:00:39,806|'int' object has no attribute 'get_time'
+|ERROR|2023-04-18 04:01:36,400|packet queue is empty, aborting
+|ERROR|2023-04-18 04:03:02,420|Connection error: HTTPSConnectionPool(host='api-demo.fxcm.com', port=443): Read timed out. (read timeout=5)
+|ERROR|2023-04-18 04:10:00,314|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:10:00,314|<class 'IndexError'>
+|ERROR|2023-04-18 04:10:00,314|list index out of range
+|ERROR|2023-04-18 04:15:00,538|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:15:00,539|<class 'IndexError'>
+|ERROR|2023-04-18 04:15:00,539|list index out of range
+|ERROR|2023-04-18 04:25:00,948|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:25:00,948|<class 'IndexError'>
+|ERROR|2023-04-18 04:25:00,948|list index out of range
+|ERROR|2023-04-18 04:30:02,490|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:30:02,491|<class 'IndexError'>
+|ERROR|2023-04-18 04:30:02,491|list index out of range
+|ERROR|2023-04-18 04:35:01,115|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:35:01,115|<class 'IndexError'>
+|ERROR|2023-04-18 04:35:01,116|list index out of range
+|ERROR|2023-04-18 04:45:00,680|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:45:00,681|<class 'IndexError'>
+|ERROR|2023-04-18 04:45:00,681|list index out of range
+|ERROR|2023-04-18 04:50:00,610|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 04:50:00,611|<class 'IndexError'>
+|ERROR|2023-04-18 04:50:00,611|list index out of range
+|ERROR|2023-04-18 05:00:00,459|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:00:00,460|<class 'IndexError'>
+|ERROR|2023-04-18 05:00:00,460|list index out of range
+|ERROR|2023-04-18 05:05:00,394|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:05:00,395|<class 'IndexError'>
+|ERROR|2023-04-18 05:05:00,395|list index out of range
+|ERROR|2023-04-18 05:10:01,960|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:10:01,961|<class 'IndexError'>
+|ERROR|2023-04-18 05:10:01,961|list index out of range
+|ERROR|2023-04-18 05:15:00,467|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:15:00,467|<class 'IndexError'>
+|ERROR|2023-04-18 05:15:00,467|list index out of range
+|ERROR|2023-04-18 05:20:00,820|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:20:00,821|<class 'IndexError'>
+|ERROR|2023-04-18 05:20:00,821|list index out of range
+|ERROR|2023-04-18 05:25:03,515|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:25:03,516|<class 'IndexError'>
+|ERROR|2023-04-18 05:25:03,516|list index out of range
+|ERROR|2023-04-18 05:30:00,582|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:30:00,583|<class 'IndexError'>
+|ERROR|2023-04-18 05:30:00,584|list index out of range
+|ERROR|2023-04-18 05:35:00,612|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:35:00,612|<class 'IndexError'>
+|ERROR|2023-04-18 05:35:00,613|list index out of range
+|ERROR|2023-04-18 05:40:07,721|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:40:07,722|<class 'IndexError'>
+|ERROR|2023-04-18 05:40:07,722|list index out of range
+|ERROR|2023-04-18 05:45:02,100|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:45:02,101|<class 'IndexError'>
+|ERROR|2023-04-18 05:45:02,101|list index out of range
+|ERROR|2023-04-18 05:55:01,272|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 05:55:01,273|<class 'IndexError'>
+|ERROR|2023-04-18 05:55:01,273|list index out of range
+|ERROR|2023-04-18 06:00:00,690|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 06:00:00,690|<class 'IndexError'>
+|ERROR|2023-04-18 06:00:00,690|list index out of range
+|ERROR|2023-04-18 06:05:01,722|Call of get_tick_data raised an error:
+|ERROR|2023-04-18 06:05:01,723|<class 'IndexError'>
+|ERROR|2023-04-18 06:05:01,724|list index out of range

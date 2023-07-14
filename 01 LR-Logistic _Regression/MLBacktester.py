@@ -2,6 +2,7 @@
 import pandas as pd
 import numpy as np
 from talib import abstract
+import yfinance as yf
 from sklearn.linear_model import LogisticRegression
 import matplotlib.pyplot as plt
 plt.style.use("seaborn")
@@ -10,7 +11,7 @@ class MLBacktester():
     ''' Class for the vectorized backtesting of Machine Learning-based trading strategies (Classification).
     '''
 
-    def __init__(self, symbol, start, end, tc):
+    def __init__(self, symbol, interval, period, tc):
         '''
         Parameters
         ----------
@@ -24,27 +25,87 @@ class MLBacktester():
             proportional transaction/trading costs per trade
         '''
         self.symbol = symbol
-        self.start = start
-        self.end = end
         self.tc = tc
         self.model = LogisticRegression(C = 1e6, max_iter = 100000, multi_class = "ovr")
         self.results = None
-        self.get_data()
+        self.getHistoryYfinance(symbol, interval, period)
     
     def __repr__(self):
         rep = "MLBacktester(symbol = {}, start = {}, end = {}, tc = {})"
         return rep.format(self.symbol, self.start, self.end, self.tc)
-                             
+    '''                         
     def get_data(self):
-        ''' Imports the data from five_minute_pairs.csv (source can be changed).
-        '''
+        #Imports the data from five_minute_pairs.csv (source can be changed).
+        
         raw = pd.read_csv("five_minute_pairs.csv", parse_dates = ["time"], index_col = "time")
         raw = raw[self.symbol].to_frame().dropna()
         raw = raw.loc[self.start:self.end]
         raw.rename(columns={self.symbol: "price"}, inplace=True)
         raw["returns"] = np.log(raw / raw.shift(1))
         self.data = raw
+        
                              
+    def get_data(self):
+         #Imports the data from five_minute_pairs.csv (source can be changed).
+                
+        raw = pd.read_csv("EURUSD=X_Daily.csv", parse_dates = ["Date"], index_col = "Date")
+        raw.rename(columns={"Close": "price"}, inplace=True)
+        raw["returns"] = np.log(raw['price'] / raw['price'].shift(1))
+        raw = raw.drop(['Open', 'High', 'Low', 'Adj Close', 'Volume'], axis=1)
+        raw.dropna(inplace=True)
+        self.data = raw
+    '''    
+    def getHistoryYfinance(self, symbol, interval, period):
+
+        data = yf.download(  # or pdr.get_data_yahoo(...
+        # tickers list or string as well
+        tickers = symbol,
+
+        # use "period" instead of start/end
+        # valid periods: 1d,5d,1mo,3mo,6mo,1y,2y,5y,10y,ytd,max
+        # (optional, default is '1mo')
+        # period = "ytd",
+        period = period,
+
+        # fetch data by interval (including intraday if period < 60 days)
+        # valid intervals: 1m,2m,5m,15m,30m,60m,90m,1h,1d,5d,1wk,1mo,3mo
+        # (optional, default is '1d')
+        interval = interval,
+
+        # group by ticker (to access via data['SPY'])
+        # (optional, default is 'column')
+        group_by = 'ticker',
+
+        # adjust all OHLC automatically
+        # (optional, default is False)
+        auto_adjust = False,
+
+        # download pre/post regular market hours data
+        # (optional, default is False)
+        prepost = False,
+
+        # use threads for mass downloading? (True/False/Integer)
+        # (optional, default is True)
+        threads = True,
+
+        # proxy URL scheme use use when downloading?
+        # (optional, default is None)
+        proxy = None
+        )
+        
+        data.rename(columns={"Close": "price"}, inplace=True)
+        data["returns"] = np.log(data['price'] / data['price'].shift(1))
+        data = data.drop(['Open', 'High', 'Low', 'Adj Close', 'Volume'], axis=1)
+        data.dropna(inplace=True)
+        self.data = data
+        self.start = min(data.index) 
+        self.end = max(data.index) 
+        
+        return data        
+        
+        
+        
+                                    
     def split_data(self, start, end):
         ''' Splits the data into training set & test set.
         '''
@@ -147,3 +208,4 @@ class MLBacktester():
         else:
             title = "Logistic Regression: {} | TC = {}".format(self.symbol, self.tc)
             self.results[["creturns", "cstrategy"]].plot(title=title, figsize=(12, 8))
+            
